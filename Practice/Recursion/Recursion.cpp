@@ -98,6 +98,11 @@ int lastOcc(int arr[], int key, int i)
 	return lastOcc(arr,key,i--);
 }
 
+int nCr(int n, int k)
+{
+	return fact(n)/(fact(n-k)*fact(k));
+}
+
 
 int main()
 {
@@ -111,9 +116,10 @@ int main()
 
 	int a[5]={7,3,5,7,9};
 	// cout<<arrSort(a,5)<<endl;
-	int key=7;
-	cout<<firstOcc(a,key,5,0)<<endl;
-	cout<<lastOcc(a,key,4)<<endl;
+	// int key=7;
+	// cout<<firstOcc(a,key,5,0)<<endl;
+	// cout<<lastOcc(a,key,4)<<endl;
+	cout<<nCr(n,k)<<endl;
 
 	// printinc(n);
 	// cout<<endl;
